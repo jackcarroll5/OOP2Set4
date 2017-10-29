@@ -1,10 +1,12 @@
 /**Driver class for Student
  */
  import javax.swing.*;
+ import java.util.ArrayList;
+
 public class StudentTest {
    public static void main(String args[]){
    	
-   		Person p= new Person();
+   		Person p = new Person();
    		System.out.println(p.toString());
    	
    		Person p1 = new Person("Joe",21,'m');
@@ -35,7 +37,6 @@ public class StudentTest {
 					 "the Student no-argument constructor...");
 		Student s1 = new Student();
 		JOptionPane.showMessageDialog(null,"Values of default student object s1 as follows: \n" + s1.toString());
-
 		// you can use methods from Person in connection with a Student: 
 		JOptionPane.showMessageDialog(null,"Gender is : " + s1.getGender());
 
@@ -46,5 +47,18 @@ public class StudentTest {
 		Student s2 = new Student("t00012345","CPMM200","Michael Jones", 21,'m');
 		JOptionPane.showMessageDialog(null, "Create a Student object s2 via arguments to the Student constructor\n" +
 		"The values of the Student object s2 at this stage are as follows: \n" + s2.toString());
+
+
+       ArrayList<Student> myClass = new ArrayList<Student>();
+
+       myClass.add(s1);
+       myClass.add(s2);
+
+       for(int i = 0; i < myClass.size(); i++)
+       JOptionPane.showMessageDialog(null,  "\n" + myClass.get(i).toString());
+
+       for (Student stu:myClass)
+       JOptionPane.showMessageDialog(null,  "\n" + stu.toString());
+
 	  }
 }

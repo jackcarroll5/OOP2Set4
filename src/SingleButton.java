@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 /** Shows the creation of a JButton inside a JFrame window */
-public class SingleButton extends JFrame {
+public class SingleButton extends JFrame  {
 	// declare the button as an attribute of the class
 	JButton button;
   	/** configures the window and creates and adds the button */

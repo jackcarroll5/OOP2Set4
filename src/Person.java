@@ -1,9 +1,11 @@
 /** An OOP instantiable class which models one person, storing
  *  all that person's details as one object */
-public class Person {
+public class Person { //Concrete Class
 	private String name;
 	private int age;
-	private char gender;
+	private char gender;        //Abstract Class can't be instantiated. Italics
+
+	//Inherit from Abstract Class
 	
 	// 'accessor' methods to return a copy of an attribute
 	public int getAge() { return age;}

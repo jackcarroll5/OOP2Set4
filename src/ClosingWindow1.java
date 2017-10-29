@@ -1,8 +1,9 @@
-import javax.swing.*;
-import java.awt.event.*;
+import javax.swing.*; //Importing JFrame,JButton and other components
+import java.awt.event.*; //Importing Event Handlers
+
 /** Creates and displays a simple window by extending JFrame
  *  Displays a customised message on closing the window */
-public class ClosingWindow1 extends JFrame {
+public class ClosingWindow1 extends JFrame { //Base class = ClosingWindow1, Derived Class = JFrame
   
   /** driver for ClosingWindow1: can be in a separate class */
   public static void main(String args[]){

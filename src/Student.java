@@ -1,18 +1,18 @@
 /** Models a student,inherits from Person*/
 public class Student extends Person implements Hugable,Kissable{
-
+                    //Inheritance
   private String studentNumber;
   private String course;
   Person person = new Person(getName(),getAge(),getGender());
   		
   public Student() {
   
-	    super();
+	    super();//Inheritance
 	    setStudentNumber("Unknown");
 	    setCourse("Unassigned");
   }
 
-  public Student(String snum,String c, String name,int age, char gender){
+  public Student(String snum,String c, String name,int age, char gender){ //Constructor
 	     //new Person(name,age,gender);
 	     super(name,age,gender);
 	     //setName(name);
@@ -49,7 +49,7 @@ public class Student extends Person implements Hugable,Kissable{
   	  public String toString(){
 	     return "Student Number is " + getStudentNumber() + 
 	     "\nCourse is " + getCourse() + 
-	     "\nOther details: " + super.toString();
+	     "\nOther details: " + super.toString();//Inheritance Overriding
    } 
    	
    	
@@ -63,5 +63,8 @@ public class Student extends Person implements Hugable,Kissable{
    	return "Get Lost";
    	
    }
-    		
+
+    public double squeezeable(int y) {
+        return 0;
+    }
 }
